@@ -5,12 +5,30 @@
   font-family: Arial, sans-serif;
 }
 
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --primary-color: navy;
+  --hover-color: royalblue;
+  --input-border: #ccc;
+  --white: #fff;
+}
+
 body {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   padding-left: 0;
   padding-top: 70px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --primary-color: #222266;
+  --hover-color: #4444aa;
+  --input-border: #555;
+  --white: #fff;
 }
 
 nav {

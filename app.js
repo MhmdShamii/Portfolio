@@ -18,3 +18,8 @@ next.addEventListener("click", () => {
   }
   img.src = `./rec/image${count}.png`;
 });
+const toggle = document.getElementById("mode-toggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
