@@ -46,7 +46,7 @@ nav button:hover {
 }
 
 .about,
-.projects,
+.Projects,
 .contact,
 .gallery {
   padding: 40px 20px;
@@ -54,6 +54,24 @@ nav button:hover {
   margin: auto;
 }
 
+.imgs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgs button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+}
 .about {
   display: flex;
   gap: 20px;
@@ -103,7 +121,9 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: royalblue;
 }
-
+.Projects img {
+  width: 70%;
+}
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
